@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Oak & Bean Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="main-header">
+        <div class="logo">Oak & Bean Cafe</div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-item active-nav">Home</a>
+            <a href="menu.html" class="nav-item">Menu</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content" class="container">
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Oak & Bean Cafe</h1>
+                <p class="tagline">Freshly brewed artisan coffee & hand-baked pastries in the heart of Romford.</p>
+                <a href="menu.html" class="btn">Order for Collection</a>
+            </div>
+        </section>
+
+        <div class="grid-two-col">
+            <section class="about-section">
+                <h2>Our Story</h2>
+                <p>Oak & Bean Café is a small independent coffee shop located near the heart of Romford. We opened in 2023 with a simple goal — to serve high-quality coffee, fresh food, and create a relaxed space for the local community. Everything is prepared fresh daily, from our hand-baked pastries to our locally sourced sandwiches. Whether you're grabbing a quick espresso on the go or sitting in for a slow brunch, we aim to make you feel at home.</p>
+            </section>
+
+            <section class="hours-section">
+                <h2>Opening Hours <span id="open-status" class="status-badge"></span></h2>
+                <div class="hours-list">
+                    <p><span>Monday - Friday</span> <span>7:30am - 5:30pm</span></p>
+                    <p><span>Saturday</span> <span>8:00am - 6:00pm</span></p>
+                    <p><span>Sunday</span> <span>9:00am - 4:00pm</span></p>
+                </div>
+            </section>
+        </div>
+
+        <section class="specials-section">
+            <h2>Seasonal Specials</h2>
+            <div class="specials-grid">
+                <div class="special-card">
+                    <span class="promo-badge">Trending</span>
+                    <h3>Iced Pistachio Latte</h3>
+                    <p>Our signature espresso combined with creamy oat milk and premium sweet pistachio syrup, served over ice.</p>
+                    <span class="price">£4.10</span>
+                </div>
+                <div class="special-card">
+                    <span class="promo-badge">Freshly Baked</span>
+                    <h3>Almond & Raspberry Cruffin</h3>
+                    <p>A flaky croissant-muffin hybrid filled with tangy house-made raspberry compote and topped with toasted almond flakes.</p>
+                    <span class="price">£3.80</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section">
+            <h2>What Our Locals Say</h2>
+            <div class="reviews-container">
+                <div class="review-card active">
+                    <p class="review-text">"Hands down the best flat white in Romford. The atmosphere is quiet enough to get some morning work done, and the staff are incredibly welcoming."</p>
+                    <p class="review-author">— Sarah M., Local Regular</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Their pastries are out of this world. Get there early on Saturdays before the chocolate croissants sell out!"</p>
+                    <p class="review-author">— David T., Commuter</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"A lovely family-run addition to the neighbourhood. The avocado toast is perfectly seasoned and beautifully presented."</p>
+                    <p class="review-author">— Emma L., Student</p>
+                </div>
+                <div class="review-controls">
+                    <button id="prev-review" class="control-btn">&larr;</button>
+                    <button id="next-review" class="control-btn">&rarr;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <h2>Join the Coffee Club</h2>
+                <p>Sign up to receive updates on weekend specials, brewing workshops, and get 10% off your first visit.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" id="email-input" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+                <p id="form-message" class="form-message"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container footer-grid">
+            <div>
+                <h3>Come Visit</h3>
+                <p>42 Riverside Lane, Romford, RM1 2AB</p>
+            </div>
+            <div>
+                <h3>Get In Touch</h3>
+                <p>Phone: 01708 555 239 | Email: hello@oakandbean.co.uk</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
