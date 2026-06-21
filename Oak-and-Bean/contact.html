@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Oak & Bean Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="main-header">
+        <div class="logo">Oak & Bean Cafe</div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="menu.html" class="nav-item">Menu</a>
+            <a href="contact.html" class="nav-item active-nav">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content" class="container">
+        <section class="page-title">
+            <h1>Contact Us</h1>
+            <p>Have a question or looking to book out our upper floor area? Drop us a line below.</p>
+        </section>
+
+        <div class="grid-two-col">
+            <section class="contact-form-container">
+                <h2>Send a Message</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <p id="contact-feedback" class="form-message"></p>
+            </section>
+
+            <section class="contact-info-pane">
+                <h2>Our Location</h2>
+                <p class="address-block">
+                    <strong>Oak & Bean Cafe</strong><br>
+                    42 Riverside Lane<br>
+                    Romford<br>
+                    RM1 2AB<br>
+                    United Kingdom
+                </p>
+                <div class="map-placeholder">
+                    <img src="https://placehold.co/600x400?text=Map+Location:+RM1+2AB" alt="Map grid detailing location of Oak and Bean Cafe" class="map-img">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container footer-grid">
+            <div>
+                <h3>Come Visit</h3>
+                <p>42 Riverside Lane, Romford, RM1 2AB</p>
+            </div>
+            <div>
+                <h3>Get In Touch</h3>
+                <p>Phone: 01708 555 239 | Email: hello@oakandbean.co.uk</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
