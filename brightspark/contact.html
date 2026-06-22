@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Team | BrightSpark Electrical Solutions</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="text-2xl font-bold tracking-tight text-amber-400">⚡ BrightSpark</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="index.html" class="hover:text-amber-300 transition">Home</a>
+                <a href="services.html" class="hover:text-amber-300 transition">Services & Pricing</a>
+                <a href="contact.html" class="text-amber-400 hover:text-amber-300 transition">Contact & Team</a>
+            </nav>
+            <a href="contact.html" class="bg-amber-500 hover:bg-amber-400 text-blue-950 font-bold px-5 py-2.5 rounded transition shadow">Book a Quote</a>
+        </div>
+    </header>
+
+    <section class="bg-blue-950 text-white py-12 px-6 text-center">
+        <h1 class="text-3xl md:text-4xl font-bold mb-2">Contact Us & Meet the Team</h1>
+        <p class="text-blue-200">Get a free quote or reach out to our administration office directly.</p>
+    </section>
+
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-2xl font-bold text-center text-blue-950 mb-2">Meet Our Certified Team</h2>
+        <p class="text-gray-500 text-center mb-10 text-sm">Experienced specialists handling domestic and commercial demands.</p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden text-center p-4">
+                <img src="https://placehold.co/300x300?text=Michael+Carter\nFounder" alt="Michael Carter" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                <h3 class="font-bold text-gray-900 text-md">Michael Carter</h3>
+                <p class="text-xs text-amber-600 font-semibold uppercase tracking-wider">Founder & MD</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden text-center p-4">
+                <img src="https://placehold.co/300x300?text=Emily+Hughes\nOperations" alt="Emily Hughes" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                <h3 class="font-bold text-gray-900 text-md">Emily Hughes</h3>
+                <p class="text-xs text-amber-600 font-semibold uppercase tracking-wider">Operations Manager</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden text-center p-4">
+                <img src="https://placehold.co/300x300?text=Ryan+Foster\nSenior+Electrician" alt="Ryan Foster" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                <h3 class="font-bold text-gray-900 text-md">Ryan Foster</h3>
+                <p class="text-xs text-amber-600 font-semibold uppercase tracking-wider">Senior Electrician</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden text-center p-4">
+                <img src="https://placehold.co/300x300?text=Daniel+Khan\nTechnician" alt="Daniel Khan" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                <h3 class="font-bold text-gray-900 text-md">Daniel Khan</h3>
+                <p class="text-xs text-amber-600 font-semibold uppercase tracking-wider">Electrical Tech</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 pb-20 grid md:grid-cols-2 gap-12">
+        <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+            <h2 class="text-xl font-bold text-blue-950 mb-4">Request a Free, No-Obligation Quotation</h2>
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('Showcase Form Submitted Successfully!');">
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Your Name</label>
+                    <input type="text" placeholder="John Doe" class="w-full border border-gray-200 rounded p-2.5 text-sm focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Email Address</label>
+                    <input type="email" placeholder="john@example.com" class="w-full border border-gray-200 rounded p-2.5 text-sm focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Service Required</label>
+                    <select class="w-full border border-gray-200 rounded p-2.5 text-sm focus:outline-none focus:border-amber-500">
+                        <option>Domestic Electrical Service</option>
+                        <option>Commercial Maintenance / Fit-Out</option>
+                        <option>EV Charger Point Installation</option>
+                        <option>Electrical Safety Inspection (EICR)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Brief Job Description</label>
+                    <textarea rows="4" placeholder="Describe what you need..." class="w-full border border-gray-200 rounded p-2.5 text-sm focus:outline-none focus:border-amber-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-blue-950 font-bold py-3 rounded tracking-wide transition">Submit Request</button>
+            </form>
+        </div>
+
+        <div class="flex flex-col justify-between space-y-8">
+            <div class="bg-blue-900 text-white p-6 rounded-2xl shadow-md">
+                <h3 class="text-lg font-bold text-amber-400 mb-4">Business Working Hours</h3>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between border-b border-blue-800 pb-2"><span>Monday – Friday</span><span class="font-bold">8:00 AM – 6:00 PM</span></div>
+                    <div class="flex justify-between border-b border-blue-800 pb-2"><span>Saturday</span><span class="font-bold">9:00 AM – 2:00 PM</span></div>
+                    <div class="flex justify-between text-amber-400"><span>Sunday</span><span class="font-black">Emergency Callouts Only</span></div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
+                <h3 class="text-lg font-bold text-blue-950 mb-4">Frequently Asked Questions</h3>
+                <div class="space-y-4 text-sm">
+                    <div>
+                        <h4 class="font-bold text-gray-900">Q: Do you provide free quotes?</h4>
+                        <p class="text-gray-600">Yes, all standard quotations are provided free of charge.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Q: Are your electricians qualified?</h4>
+                        <p class="text-gray-600">All our electricians are fully trained and certified to current industry standards.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Q: Can you install EV chargers?</h4>
+                        <p class="text-gray-600">Absolutely. We supply and install a range of home and commercial EV charging solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-blue-950 text-white pt-12 pb-6 px-6">
+        <p class="text-center text-xs text-blue-300">&copy; 2026 BrightSpark Electrical Solutions. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
