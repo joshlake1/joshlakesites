@@ -3,39 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services & Pricing | BrightSpark Electrical Solutions</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Services & Pricing Guide | BrightSpark Electrical Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body>
 
-    <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <span class="text-2xl font-bold tracking-tight text-amber-400">⚡ BrightSpark</span>
-            </div>
-            <nav class="hidden md:flex space-x-8 font-medium">
-                <a href="index.html" class="hover:text-amber-300 transition">Home</a>
-                <a href="services.html" class="text-amber-400 hover:text-amber-300 transition">Services & Pricing</a>
-                <a href="contact.html" class="hover:text-amber-300 transition">Contact & Team</a>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <div class="logo">⚡ <span class="logo-highlight">BrightSpark</span></div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services & Pricing</a>
+                <a href="contact.html" class="nav-link">Contact & Team</a>
             </nav>
-            <a href="contact.html" class="bg-amber-500 hover:bg-amber-400 text-blue-950 font-bold px-5 py-2.5 rounded transition shadow">Book a Quote</a>
+            <a href="contact.html" class="btn btn-primary">Book a Quote</a>
         </div>
     </header>
 
-    <section class="bg-blue-950 text-white py-12 px-6 text-center">
-        <h1 class="text-3xl md:text-4xl font-bold mb-2">Our Electrical Services & Flat Rates</h1>
-        <p class="text-blue-200">Clear solutions and completely transparent pricing models.</p>
+    <section class="subpage-banner">
+        <div class="container">
+            <h1>Our Electrical Services & Rates</h1>
+            <p>Clear, fixed solutions paired with completely transparent regional operational pricing models.</p>
+        </div>
     </section>
 
-    <main class="container mx-auto px-6 py-16 space-y-16">
-        
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden flex flex-col justify-between">
+    <main class="container section-padding">
+        <div class="grid-3 mb-12">
+            
+            <div class="service-card">
                 <div>
-                    <img src="https://placehold.co/600x400?text=Domestic+Electrical+Services\nSmart+Home+Lighting" alt="Domestic Services" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h2 class="text-xl font-bold text-blue-950 mb-4 flex items-center gap-2">🏠 Domestic Services</h2>
-                        <ul class="space-y-2.5 text-gray-600 text-sm">
+                    <img src="https://placehold.co/600x400?text=Domestic+Electrical+Services\nSmart+Home+Lighting" alt="Residential wiring installations setup" class="card-img">
+                    <div class="card-body">
+                        <h2>🏠 Domestic Services</h2>
+                        <ul class="card-ul">
                             <li>• Full house rewiring</li>
                             <li>• Consumer unit upgrades</li>
                             <li>• Indoor & outdoor lighting installation</li>
@@ -47,17 +48,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="p-6 bg-gray-50 border-t border-gray-100">
-                    <a href="contact.html" class="block text-center bg-blue-900 text-white text-sm font-bold py-2.5 rounded hover:bg-blue-800 transition">Book Domestic Service</a>
+                <div class="card-footer">
+                    <a href="contact.html" class="btn btn-primary btn-full">Book Domestic Service</a>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden flex flex-col justify-between">
+            <div class="service-card">
                 <div>
-                    <img src="https://placehold.co/600x400?text=Commercial+Office+Fitouts\nThree+Phase+Power" alt="Commercial Services" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h2 class="text-xl font-bold text-blue-950 mb-4 flex items-center gap-2">🏢 Commercial Services</h2>
-                        <ul class="space-y-2.5 text-gray-600 text-sm">
+                    <img src="https://placehold.co/600x400?text=Commercial+Office+Fitouts\nThree+Phase+Power" alt="Commercial data panel distributions layout" class="card-img">
+                    <div class="card-body">
+                        <h2>🏢 Commercial Services</h2>
+                        <ul class="card-ul">
                             <li>• Office fit-outs</li>
                             <li>• Emergency lighting</li>
                             <li>• Data cabling</li>
@@ -68,18 +69,18 @@
                         </ul>
                     </div>
                 </div>
-                <div class="p-6 bg-gray-50 border-t border-gray-100">
-                    <a href="contact.html" class="block text-center bg-blue-900 text-white text-sm font-bold py-2.5 rounded hover:bg-blue-800 transition">Request Commercial B2B Quote</a>
+                <div class="card-footer">
+                    <a href="contact.html" class="btn btn-primary btn-full">Request Corporate Quote</a>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl shadow-xl border-2 border-red-200 overflow-hidden flex flex-col justify-between">
+            <div class="service-card service-card-emergency">
                 <div>
-                    <div class="bg-red-500 text-white text-center text-xs font-black py-1.5 uppercase tracking-widest">Available 24 Hours / 7 Days</div>
-                    <img src="https://placehold.co/600x400?text=Emergency+24/7\nElectrical+Outage+Van" alt="Emergency Services" class="w-full h-44 object-cover">
-                    <div class="p-6">
-                        <h2 class="text-xl font-bold text-red-600 mb-4 flex items-center gap-2">🚨 Emergency Support</h2>
-                        <ul class="space-y-2.5 text-gray-600 text-sm">
+                    <div class="emergency-ribbon">24 Hour Rapid Response</div>
+                    <img src="https://placehold.co/600x400?text=Emergency+24/7\nElectrical+Outage+Van" alt="Emergency dispatch industrial systems van" class="card-img">
+                    <div class="card-body">
+                        <h2>🚨 Emergency Support</h2>
+                        <ul class="card-ul">
                             <li>• 24/7 emergency callouts</li>
                             <li>• Complete power outages</li>
                             <li>• Burning smell investigations</li>
@@ -88,38 +89,40 @@
                         </ul>
                     </div>
                 </div>
-                <div class="p-6 bg-red-50 border-t border-red-100">
-                    <a href="tel:0161000000" class="block text-center bg-red-600 text-white text-sm font-bold py-2.5 rounded hover:bg-red-700 transition">Call Dispatcher Instantly</a>
+                <div class="card-footer">
+                    <a href="tel:01615550199" class="btn btn-emergency btn-full">Call Emergency Dispatch</a>
                 </div>
             </div>
+
         </div>
 
-        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8">
-            <h2 class="text-2xl font-bold text-blue-950 mb-2">Example Pricing Guide</h2>
-            <p class="text-gray-500 text-sm mb-6">We believe in completely fair and open standard rates.</p>
-            <div class="overflow-x-auto">
-                <table class="w-full text-left border-collapse">
+        <div class="card-list shadow-lg">
+            <h2 class="section-title">Example Pricing Guide</h2>
+            <p style="color: #6b7280; font-size: 0.875rem; margin-bottom: 1.5rem;">We ensure open standard flat rates. Below is a base matrix covering our foundational system diagnostic callouts.</p>
+            <div class="table-responsive">
+                <table class="pricing-table">
                     <thead>
-                        <tr class="bg-blue-900 text-white uppercase text-xs tracking-wider">
-                            <th class="p-4 rounded-l-lg">Standard Service Offerings</th>
-                            <th class="p-4 rounded-r-lg text-right">Starting Price (inc. VAT)</th>
+                        <tr>
+                            <th>Standard Operational Assignment Class</th>
+                            <th class="text-right">Starting Price (inc. VAT)</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-gray-100 text-sm">
-                        <tr class="hover:bg-gray-50"><td class="p-4 font-medium text-gray-900">Electrical Safety Inspection</td><td class="p-4 text-right font-bold text-blue-900">£120</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-4 font-medium text-gray-900">Additional Socket Installation</td><td class="p-4 text-right font-bold text-blue-900">£85</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-4 font-medium text-gray-900">Consumer Unit Upgrade</td><td class="p-4 text-right font-bold text-blue-900">£650</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-4 font-medium text-gray-900">EV Charger Installation</td><td class="p-4 text-right font-bold text-blue-900">£950</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-4 font-medium text-gray-900">Emergency Callout Rate</td><td class="p-4 text-right font-bold text-blue-900 text-red-600">£95</td></tr>
+                    <tbody>
+                        <tr><td>Electrical Safety Inspection</td><td class="text-right font-bold color-blue">£120</td></tr>
+                        <tr><td>Additional Socket Installation</td><td class="text-right font-bold color-blue">£85</td></tr>
+                        <tr><td>Consumer Unit Upgrade</td><td class="text-right font-bold color-blue">£650</td></tr>
+                        <tr><td>EV Charger Installation</td><td class="text-right font-bold color-blue">£950</td></tr>
+                        <tr><td>Emergency Callout Rate</td><td class="text-right font-bold color-red">£95</td></tr>
                     </tbody>
                 </table>
             </div>
         </div>
-
     </main>
 
-    <footer class="bg-blue-950 text-white pt-12 pb-6 px-6">
-        <p class="text-center text-xs text-blue-300">&copy; 2026 BrightSpark Electrical Solutions. All Rights Reserved.</p>
+    <footer class="site-footer">
+        <div class="container copyright">
+            &copy; 2026 BrightSpark Electrical Solutions. All Rights Reserved.
+        </div>
     </footer>
 
 </body>
