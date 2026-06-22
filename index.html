@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josh | Modern Websites for Local UK Businesses</title>
+    <title>Josh | Premium Web Development for Local UK Businesses</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="glow-bg-1"></div>
+    <div class="glow-bg-2"></div>
 
     <nav class="navbar">
         <div class="container nav-container">
@@ -17,52 +20,85 @@
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+                <li><a href="#contact" class="btn btn-primary">Get a Quote</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container hero-container">
-            <h1>Modern Websites for Local Businesses That Bring in More Customers</h1>
-            <p>I design and build fast, mobile-friendly websites for small businesses in the UK. Simple, clean, and built to turn visitors into real enquiries.</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-                <a href="#work" class="btn btn-secondary">View My Work</a>
+    <header class="hero container-fluid">
+        <div class="hero-split">
+            <div class="hero-left">
+                <span class="badge">🔥 Helping UK Small Businesses Grow Online</span>
+                <h1>Modern Websites for Local Businesses That Bring in More Customers</h1>
+                <p>I design and build lightning-fast, mobile-friendly websites for small businesses in the UK. Simple, clean, and meticulously engineered to turn visitors into real paying enquiries.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+                    <a href="#work" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="browser-mockup">
+                    <div class="browser-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <div class="browser-search">brightspark-electrical.co.uk</div>
+                    </div>
+                    <div class="browser-body">
+                        <div class="mock-nav">⚡ BrightSpark</div>
+                        <div class="mock-hero">
+                            <h3>Professional Electrician Services</h3>
+                            <p>Safe, reliable, and certified local UK electricians.</p>
+                            <span class="mock-btn">Book an Engineer</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <section class="intro container">
         <div class="intro-content">
-            <h2>Hi, I'm Josh</h2>
-            <p>I'm a UK-based web developer focused on helping local businesses get a professional online presence. I build simple, modern websites that are easy to use, load fast, and help customers find and contact you quickly.</p>
+            <h2>Hi, I’m Josh</h2>
+            <p>I’m a UK-based web developer focused on helping local businesses establish a premium online presence. I build simple, modern websites that are stunningly easy to use, load instantly, and make it effortless for customers to contact you.</p>
         </div>
     </section>
 
-    <section id="services" class="services bg-light">
-        <div class="container">
-            <h2 class="section-title">What I do</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>💼 Business Websites</h3>
-                    <p>Clean, modern websites for trades, shops, cafés, and local services.</p>
+    <section id="services" class="services">
+        <div class="container-fluid">
+            <h2 class="section-title">What I Do</h2>
+            <p class="section-subtitle">Tailored digital systems to get your business noticed online.</p>
+            
+            <div class="bento-grid">
+                <div class="bento-card bento-large">
+                    <span class="bento-emoji">💼</span>
+                    <h3>Business Websites</h3>
+                    <p>Clean, custom-crafted modern websites built explicitly for trades, shops, cafés, and local services. Fully tailored to match your precise brand identity and establish immediate trust.</p>
                 </div>
-                <div class="card">
-                    <h3>📱 Mobile-Friendly Design</h3>
-                    <p>Every website works perfectly on phones, tablets, and computers.</p>
+                
+                <div class="bento-card bento-medium">
+                    <span class="bento-emoji">📱</span>
+                    <h3>Mobile-Friendly Layouts</h3>
+                    <p>Every line of code is optimized to work flawlessly across phones, tablets, and computers alike.</p>
                 </div>
-                <div class="card">
-                    <h3>⚡ Fast Performance</h3>
-                    <p>Lightweight websites that load quickly and feel professional.</p>
+                
+                <div class="bento-card bento-medium">
+                    <span class="bento-emoji">⚡</span>
+                    <h3>Fast Performance</h3>
+                    <p>Lightweight frameworks that open instantly to prevent losing customers with low attention spans.</p>
                 </div>
-                <div class="card">
-                    <h3>📞 Contact & Lead Forms</h3>
-                    <p>Simple enquiry forms so customers can easily reach you.</p>
+                
+                <div class="bento-card bento-small">
+                    <span class="bento-emoji">📞</span>
+                    <h3>Lead & Contact Forms</h3>
+                    <p>High-converting enquiry pipelines making reaching your desk effortless.</p>
                 </div>
-                <div class="card">
-                    <h3>🌐 Domain Setup Help</h3>
-                    <p>I connect your website to your own domain (like yourbusiness.co.uk).</p>
+                
+                <div class="bento-card bento-small">
+                    <span class="bento-emoji">🌐</span>
+                    <h3>Domain Setup Help</h3>
+                    <p>Full management linking your server effortlessly to custom co.uk addresses.</p>
                 </div>
             </div>
         </div>
@@ -70,110 +106,118 @@
 
     <section id="why-choose-me" class="why-me container">
         <h2 class="section-title">Why Choose Me</h2>
-        <p class="section-subtitle">I focus on clear, simple websites that actually help your business — not complicated systems or unnecessary features.</p>
-        <div class="grid grid-4">
-            <div class="benefit-item">✔ Easy communication</div>
-            <div class="benefit-item">✔ Fast turnaround</div>
-            <div class="benefit-item">✔ Clean modern design</div>
-            <div class="benefit-item">✔ Built for real customers, not just looks</div>
+        <p class="section-subtitle">I focus on clear, functional sites that actually yield real results — not overly complicated features you don't need.</p>
+        <div class="grid-benefits">
+            <div class="benefit-item"><span>✔</span> Easy communication</div>
+            <div class="benefit-item"><span>✔</span> Fast turnaround</div>
+            <div class="benefit-item"><span>✔</span> Clean modern design</div>
+            <div class="benefit-item"><span>✔</span> Built for real conversion</div>
         </div>
     </section>
 
-    <section id="pricing" class="pricing bg-light">
-        <div class="container">
+    <section id="pricing" class="pricing">
+        <div class="container-fluid">
             <h2 class="section-title">Simple & Transparent Pricing</h2>
-            <div class="grid grid-3">
+            <p class="section-subtitle">No hidden fees. Premium craft, local pricing models.</p>
+            <div class="pricing-grid">
                 <div class="price-card">
                     <h3>Starter Website</h3>
-                    <div class="price">from £50</div>
+                    <div class="price">from £150</div>
                     <ul>
-                        <li>1-3 pages</li>
-                        <li>Basic business info</li>
-                        <li>Contact form</li>
+                        <li>1–3 Custom Pages</li>
+                        <li>Basic Business Information</li>
+                        <li>High-Converting Contact Form</li>
                     </ul>
+                    <a href="#contact" class="btn btn-secondary">Get Started</a>
                 </div>
                 <div class="price-card featured">
                     <h3>Business Website</h3>
-                    <div class="price">from £100</div>
+                    <div class="price">from £250</div>
                     <ul>
-                        <li>3-5 pages</li>
-                        <li>Services, about, contact, homepage</li>
-                        <li>Mobile optimised design</li>
+                        <li>4–6 Strategic Pages</li>
+                        <li>Services, About, Contact & Home layout</li>
+                        <li>Fully Mobile Optimised Architecture</li>
                     </ul>
+                    <a href="#contact" class="btn btn-primary">Most Popular</a>
                 </div>
                 <div class="price-card">
                     <h3>Optional Maintenance</h3>
-                    <div class="price">£5<span>/month</span></div>
+                    <div class="price">£10<span>/month</span></div>
                     <ul>
-                        <li>Small updates</li>
-                        <li>Fixes</li>
-                        <li>Changes when needed</li>
+                        <li>Ongoing Structural Updates</li>
+                        <li>Core Hosting/Security Fixes</li>
+                        <li>Text & Image Updates When Needed</li>
                     </ul>
+                    <a href="#contact" class="btn btn-secondary">Add-on</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="work" class="work container">
-        <h2 class="section-title">Example Project</h2>
+    <section id="work" class="work container-fluid">
+        <h2 class="section-title">Example Project Case Study</h2>
+        <p class="section-subtitle">See the architectural styling live in action.</p>
         <div class="project-card">
             <div class="project-img-placeholder">
-                <span>[ BrightSpark Electrical Screenshot ]</span>
+                <div class="browser-mockup-header">
+                    <span></span><span></span><span></span>
+                </div>
+                <span class="mock-text">[ BrightSpark Electrical Live Demo Link ]</span>
             </div>
             <div class="project-info">
                 <h3>BrightSpark Electrical (Demo Project)</h3>
-                <p>A modern electrician website designed to show how a local business can present itself professionally online and generate more customer enquiries.</p>
-                <a href="#" class="btn btn-secondary">View Demo Site</a>
+                <p>A modern, high-converting local service blueprint showcasing how a UK electrician can present themselves authoritatively online to maximize incoming calls.</p>
+                <a href="#" class="btn btn-secondary">Launch Live Demo</a>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about bg-light">
+    <section id="about" class="about">
         <div class="container small-container">
             <h2 class="section-title">About Me</h2>
-            <p>I'm a self-taught web developer based in the UK, focused on building websites for small local businesses.</p>
-            <p>I enjoy creating simple, clean designs that help businesses look professional and get more customers online.</p>
-            <p>My goal is to make websites that are easy to use, fast, and affordable for small businesses that don’t want complicated solutions.</p>
+            <p>I’m a self-taught web developer based in the UK, specializing in building high-performance digital spaces for independent companies and tradesmen.</p>
+            <p>I focus heavily on minimalistic designs that balance aesthetic beauty with conversion frameworks, steering clear of bloated code blocks or expensive overhead subscriptions.</p>
+            <p>My goal is to make professional web engineering accessible, affordable, and highly profitable for ambitious small businesses across the country.</p>
         </div>
     </section>
 
     <section id="contact" class="contact container small-container">
-        <h2 class="section-title">Get in touch</h2>
-        <p class="section-subtitle">If you need a website for your business, feel free to message me. I can usually reply quickly and give you a simple quote.</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Drop details about your business below. I usually respond within a few business hours with a clear, stress-free estimate.</p>
         
         <div data-fs-success class="form-alert success-alert">
-            🎉 Thanks! Your message has been sent successfully. Josh will be in touch soon.
+            🎉 Thanks! Your message went through perfectly. Josh will review this shortly!
         </div>
         <div data-fs-error class="form-alert error-alert">
-            ❌ Oops! There was a problem submitting your form. Please try again.
+            ❌ Submitting encountered a hitch. Please check your data fields and try again.
         </div>
 
         <form id="contactForm" class="contact-form">
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" data-fs-field required>
+                <input type="text" id="name" name="name" data-fs-field required placeholder="Your full name">
                 <span data-fs-error="name" class="field-error"></span>
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" data-fs-field required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" data-fs-field required placeholder="you@company.co.uk">
                 <span data-fs-error="email" class="field-error"></span>
             </div>
             <div class="form-group">
                 <label for="business">Business Name</label>
-                <input type="text" id="business" name="business_name" data-fs-field>
+                <input type="text" id="business" name="business_name" data-fs-field placeholder="e.g. BrightSpark Electrical">
                 <span data-fs-error="business_name" class="field-error"></span>
             </div>
             <div class="form-group">
-                <label for="message">What you need</label>
-                <textarea id="message" name="message" rows="5" data-fs-field required></textarea>
+                <label for="message">Project Requirements</label>
+                <textarea id="message" name="message" rows="5" data-fs-field required placeholder="Tell me briefly about your business goals..."></textarea>
                 <span data-fs-error="message" class="field-error"></span>
             </div>
-            <button type="submit" data-fs-submit-btn class="btn btn-primary btn-block">Send Message</button>
+            <button type="submit" data-fs-submit-btn class="btn btn-primary btn-block">Secure Project Quote</button>
         </form>
 
         <div class="whatsapp-prompt">
-            <p>Or message me directly on <a href="https://wa.me/yournumber" target="_blank" class="whatsapp-link">WhatsApp</a> for a faster reply.</p>
+            <p>Need urgent advice? Direct message via <a href="https://wa.me/yournumber" target="_blank" class="whatsapp-link">WhatsApp Link</a> for fast tracking.</p>
         </div>
     </section>
 
@@ -189,7 +233,6 @@
         formspree('initForm', { formElement: '#contactForm', formId: 'xaqgybag' });
     </script>
     <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
-
     <script src="script.js"></script>
 </body>
 </html>
