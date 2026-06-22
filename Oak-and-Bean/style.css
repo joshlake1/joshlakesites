@@ -101,7 +101,7 @@ h2 {
     position: relative;
     text-align: center;
     padding: 120px 20px;
-    background-image: url('https://placehold.co/1200x500?text=Oak+%26+Bean+Interior+Aesthetic');
+    background-image: ./images/cafe.jpg;
     background-size: cover;
     background-position: center;
     border-radius: 12px;
