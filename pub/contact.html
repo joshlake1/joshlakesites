@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact The Copper Kettle — book a table, enquire about private hire, or find us at 14 High Street, Ashford, Kent.">
+  <title>Contact &amp; Bookings | The Copper Kettle</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-name">The Copper Kettle</span>
+        <span class="logo-tagline">Est. 1847 &middot; Ashford, Kent</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html" class="nav-cta active">Book a Table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero hero-small">
+    <div class="hero-bg" style="background-image: url('https://placehold.co/1920x600/2a221c/c9a84c?text=Welcoming+Pub+Entrance+with+Hanging+Sign')"></div>
+    <div class="hero-content">
+      <span class="section-label">Get in Touch</span>
+      <h1>Contact &amp; Bookings</h1>
+      <p class="lead">Reserve your table, enquire about private hire, or simply say hello — we'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section>
+    <div class="container contact-grid">
+      <div class="fade-in">
+        <div class="contact-info-block">
+          <h3>Address</h3>
+          <p>
+            The Copper Kettle<br>
+            14 High Street<br>
+            Ashford, Kent<br>
+            TN24 8TD
+          </p>
+        </div>
+
+        <div class="contact-info-block">
+          <h3>Telephone</h3>
+          <p><a href="tel:01233456789">01233 456 789</a></p>
+          <p style="font-size: 0.85rem; margin-top: 0.5rem;">For bookings of 7 or more, please call rather than use the online form.</p>
+        </div>
+
+        <div class="contact-info-block">
+          <h3>Email</h3>
+          <p><a href="mailto:hello@thecopperkettle.co.uk">hello@thecopperkettle.co.uk</a></p>
+          <p style="font-size: 0.85rem; margin-top: 0.5rem;">For private hire enquiries: <a href="mailto:events@thecopperkettle.co.uk">events@thecopperkettle.co.uk</a></p>
+        </div>
+
+        <div class="contact-info-block">
+          <h3>Opening Hours</h3>
+          <ul class="footer-hours" style="max-width: 280px;">
+            <li><span>Monday – Thursday</span> <span>12pm – 11pm</span></li>
+            <li><span>Friday</span> <span>12pm – 12am</span></li>
+            <li><span>Saturday</span> <span>12pm – 12am</span></li>
+            <li><span>Sunday</span> <span>12pm – 10:30pm</span></li>
+          </ul>
+        </div>
+
+        <div class="contact-info-block">
+          <h3>Food Service</h3>
+          <ul class="footer-hours" style="max-width: 280px;">
+            <li><span>Lunch</span> <span>12pm – 3pm</span></li>
+            <li><span>Dinner</span> <span>5pm – 9pm</span></li>
+            <li><span>Sunday Roast</span> <span>12pm – 6pm</span></li>
+          </ul>
+        </div>
+
+        <div class="contact-info-block">
+          <h3>Getting Here</h3>
+          <p><strong class="text-accent">By Train:</strong> Ashford International Station is a 10-minute walk. Exit via the town centre and head north on High Street.</p>
+          <p><strong class="text-accent">By Car:</strong> Free parking after 6pm on High Street. NCP car park on Elwick Road (5-minute walk). Sat nav: TN24 8TD.</p>
+          <p><strong class="text-accent">By Bus:</strong> Routes 1, 2, and 42 stop directly outside on High Street.</p>
+        </div>
+      </div>
+
+      <div class="fade-in">
+        <h2 style="margin-bottom: 1.5rem;">Book a Table</h2>
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last-name" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Preferred Date *</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">Preferred Time *</label>
+              <select id="time" name="time" required>
+                <option value="">Select a time</option>
+                <option value="12:00">12:00pm</option>
+                <option value="12:30">12:30pm</option>
+                <option value="13:00">1:00pm</option>
+                <option value="13:30">1:30pm</option>
+                <option value="14:00">2:00pm</option>
+                <option value="17:00">5:00pm</option>
+                <option value="17:30">5:30pm</option>
+                <option value="18:00">6:00pm</option>
+                <option value="18:30">6:30pm</option>
+                <option value="19:00">7:00pm</option>
+                <option value="19:30">7:30pm</option>
+                <option value="20:00">8:00pm</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guests">Number of Guests *</label>
+              <select id="guests" name="guests" required>
+                <option value="">Select guests</option>
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6">6 guests</option>
+                <option value="7+">7+ guests (please call)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="occasion">Occasion</label>
+              <select id="occasion" name="occasion">
+                <option value="">Select occasion</option>
+                <option value="casual">Casual Dining</option>
+                <option value="birthday">Birthday</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="business">Business Meal</option>
+                <option value="sunday-roast">Sunday Roast</option>
+                <option value="private-hire">Private Hire Enquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Special Requests</label>
+            <textarea id="message" name="message" placeholder="Dietary requirements, high chair needed, seating preferences, etc."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Booking Request</button>
+
+          <div id="form-success" class="form-success">
+            <strong>Thank you for your booking request!</strong><br>
+            We'll confirm your reservation by email within 24 hours. For same-day bookings, please call us on 01233 456 789.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="bg-dark" style="padding-top: 0;">
+    <div class="container fade-in">
+      <div class="section-header">
+        <span class="section-label">Location</span>
+        <h2>Find Us on the Map</h2>
+      </div>
+      <div class="map-container">
+        <img src="https://placehold.co/1200x350/2a221c/c9a84c?text=Map+Showing+The+Copper+Kettle+on+Ashford+High+Street+Kent" alt="Map showing the location of The Copper Kettle on Ashford High Street">
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="fade-in" style="max-width: 700px; margin: 0 auto;">
+        <div class="menu-item" style="flex-direction: column; gap: 0.5rem;">
+          <h4>Do I need to book for Sunday roast?</h4>
+          <p>Yes, strongly recommended. We frequently sell out by Friday. Book online or call us to secure your table.</p>
+        </div>
+        <div class="menu-item" style="flex-direction: column; gap: 0.5rem;">
+          <h4>Are children welcome?</h4>
+          <p>Absolutely. We have high chairs, a children's menu, and a welcoming atmosphere for families. Children are welcome until 9pm.</p>
+        </div>
+        <div class="menu-item" style="flex-direction: column; gap: 0.5rem;">
+          <h4>Do you accommodate dietary requirements?</h4>
+          <p>Yes. We offer vegetarian, vegan, and gluten-free options. Please mention any allergies when booking and inform your server on arrival.</p>
+        </div>
+        <div class="menu-item" style="flex-direction: column; gap: 0.5rem;">
+          <h4>Is the pub dog-friendly?</h4>
+          <p>Dogs are welcome in the bar area and beer garden. They're not permitted in the dining room, but water bowls are always available at the bar.</p>
+        </div>
+        <div class="menu-item" style="flex-direction: column; gap: 0.5rem; border-bottom: none;">
+          <h4>Do you have wheelchair access?</h4>
+          <p>Yes. We have step-free access via our side entrance on Church Passage, and an accessible toilet on the ground floor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-name">The Copper Kettle</div>
+          <p>A traditional British pub serving real ales, hearty food, and warm hospitality in the heart of Ashford, Kent since 1847.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter">X</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Food &amp; Drink Menu</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact &amp; Bookings</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <ul class="footer-hours">
+            <li><span>Mon – Thu</span> <span>12pm – 11pm</span></li>
+            <li><span>Friday</span> <span>12pm – 12am</span></li>
+            <li><span>Saturday</span> <span>12pm – 12am</span></li>
+            <li><span>Sunday</span> <span>12pm – 10:30pm</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Find Us</h4>
+          <ul>
+            <li><a href="contact.html">14 High Street</a></li>
+            <li><a href="contact.html">Ashford, Kent TN24 8TD</a></li>
+            <li><a href="tel:01233456789">01233 456 789</a></li>
+            <li><a href="mailto:hello@thecopperkettle.co.uk">hello@thecopperkettle.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 The Copper Kettle. All rights reserved.</span>
+        <span>
+          <a href="#">Privacy Policy</a> &middot;
+          <a href="#">Cookie Policy</a> &middot;
+          <a href="https://www.drinkaware.co.uk/" target="_blank" rel="noopener">Drink Responsibly</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
