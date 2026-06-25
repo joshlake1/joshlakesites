@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const packageSelect = document.getElementById('package');
 
     planButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
+        button.addEventListener('click', () => {
             const targetPlan = button.getAttribute('data-plan');
             if (packageSelect) {
                 packageSelect.value = targetPlan;
@@ -38,39 +38,60 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Clean Contact Form Submission Handler
+    // 3. Production Formspree AJAX Submission Handler
     const projectForm = document.getElementById('projectForm');
 
     projectForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        // Capture data values for production analytics/hooks
-        const clientName = document.getElementById('name').value;
-        const clientEmail = document.getElementById('email').value;
-        const selectedPackage = packageSelect.value;
-        const clientMessage = document.getElementById('message').value;
-
-        // Custom UI Success Feedback
         const submitBtn = projectForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
         
+        // Put button into responsive loading state
         submitBtn.disabled = true;
         submitBtn.innerHTML = 'Sending Inquiry... <i class="fas fa-spinner fa-spin"></i>';
 
-        // Simulating processing delay before validation messaging
-        setTimeout(() => {
-            submitBtn.style.backgroundColor = '#10b981'; // Green accent
-            submitBtn.innerHTML = 'Inquiry Sent Successfully! <i class="fas fa-check"></i>';
-            
-            // Reset fields
-            projectForm.reset();
+        // Gather the form data automatically via the HTML name tags
+        const formData = new FormData(projectForm);
 
-            // Revert button interface state
+        // Send the real AJAX request directly to your Formspree endpoint
+        fetch(projectForm.action, {
+            method: projectForm.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                // Success State Animation
+                submitBtn.style.backgroundColor = '#10b981'; // Premium Green
+                submitBtn.innerHTML = 'Inquiry Sent Successfully! <i class="fas fa-check"></i>';
+                projectForm.reset();
+            } else {
+                // Server Side Error Handlers
+                response.json().then(data => {
+                    submitBtn.style.backgroundColor = '#ef4444'; // Error Red
+                    if (Object.hasOwn(data, 'errors')) {
+                        submitBtn.innerHTML = 'Submission Error. Please check fields. <i class="fas fa-exclamation-circle"></i>';
+                    } else {
+                        submitBtn.innerHTML = 'Oops! Form configuration issue. <i class="fas fa-exclamation-circle"></i>';
+                    }
+                });
+            }
+        })
+        .catch(error => {
+            // Client Network/Connection Loss Handler
+            submitBtn.style.backgroundColor = '#ef4444';
+            submitBtn.innerHTML = 'Network Error. Check your internet connection. <i class="fas fa-wifi"></i>';
+        })
+        .finally(() => {
+            // Clean interface loop: Reset button layout back to default after 4 seconds
             setTimeout(() => {
                 submitBtn.disabled = false;
                 submitBtn.style.backgroundColor = '';
                 submitBtn.innerHTML = originalText;
             }, 4000);
-        }, 1200);
+        });
     });
 });
